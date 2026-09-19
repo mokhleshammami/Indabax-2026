@@ -85,6 +85,7 @@ class AegisDefense:
                     )
 
             verdict = self.arbiter.combine(ctx, results)
+            monitor = self._monitor_report(ctx, results)
         except Exception as exc:
             verdict = Verdict(
                 decision="escalate",
@@ -96,16 +97,27 @@ class AegisDefense:
             taint = None  # type: ignore[assignment]
             authority = None  # type: ignore[assignment]
             results = []
+            monitor = None
 
         latency_ms = (time.perf_counter() - started) * 1000.0
         decision = verdict.to_decision(metadata={"ablation": self.ablation})
 
         try:
-            self.tracer.emit(self._record(request, taint, authority, results, verdict, latency_ms))
+            self.tracer.emit(self._record(request, taint, authority, results, verdict, latency_ms, monitor))
         except Exception:
             pass  # observability must never break the decision path
 
         return decision
+
+    def _monitor_report(self, ctx: SignalContext, results: list[SignalResult]) -> dict[str, Any] | None:
+        """Ask the arbiter to explain its own number, if it can. Never fatal."""
+        report = getattr(self.arbiter, "monitor_report", None)
+        if report is None:
+            return None
+        try:
+            return report(ctx, results)
+        except Exception:
+            return None
 
     # -- trace assembly -----------------------------------------------------
     def _record(
@@ -116,6 +128,7 @@ class AegisDefense:
         results: list[SignalResult],
         verdict: Verdict,
         latency_ms: float,
+        monitor: dict[str, Any] | None = None,
     ) -> TraceRecord:
         action = request.target_action()
         return TraceRecord(
@@ -147,6 +160,7 @@ class AegisDefense:
                 else None
             ),
             latency_ms=round(latency_ms, 3),
+            monitor=monitor,
         )
 
     def close(self) -> None:

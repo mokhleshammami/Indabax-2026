@@ -453,6 +453,10 @@ class TraceRecord:
     schema: str = SCHEMA_VERSION
     #: Populated by the eval harness after the run: what the sim actually did.
     outcome: dict[str, Any] | None = None
+    #: Calibrated-monitor introspection: which features moved the score and by
+    #: how much, plus the active thresholds. Rendered as the viewer's
+    #: "why this number" panel.
+    monitor: dict[str, Any] | None = None
 
     def to_json(self) -> dict[str, Any]:
         return {
@@ -474,6 +478,7 @@ class TraceRecord:
             "rewritten_action": self.rewritten_action,
             "latency_ms": self.latency_ms,
             "outcome": self.outcome,
+            "monitor": self.monitor,
         }
 
 
