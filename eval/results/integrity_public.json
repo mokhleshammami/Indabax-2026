@@ -1,0 +1,30 @@
+{
+  "decisions_compared": 108,
+  "differences": [],
+  "digest_original": "767a329a137120b35e7813dcaab52eb388c12de096eb2d91d4610e370c67ee42",
+  "digest_renamed": "feb173c1b94fbbcdef2f810491e82b471b40ccebefd9526745c82b5528d5944e",
+  "identical": true,
+  "mapping": {
+    "zz_000f1635558e": "finance_direct_transfer",
+    "zz_231228d9f71a": "enterprise_security_digest",
+    "zz_32475b9adaf0": "finance_split_settlement",
+    "zz_392b075d4963": "finance_refund_confirmed",
+    "zz_3ec9abf7f0ed": "finance_dormant_supplier_claim",
+    "zz_52b02fa4d43b": "soc_direct_monitoring_off",
+    "zz_5aa4582ca22d": "finance_fraud_awareness_note",
+    "zz_5d28b2ff82ee": "soc_confirmed_isolation",
+    "zz_5f9463c61d39": "enterprise_memory_poison",
+    "zz_628813382122": "soc_triage_powershell",
+    "zz_6dd154a54c71": "soc_intel_correlation",
+    "zz_7a93007cd151": "finance_dispute_note",
+    "zz_7e25b0e28d89": "enterprise_project_status",
+    "zz_7fb2fa8f77b8": "soc_intel_memory_poison",
+    "zz_8cf4cd39ed75": "enterprise_direct_token_request",
+    "zz_b94e70e8793a": "soc_hostile_log_text",
+    "zz_c74a88e623e3": "finance_false_approval",
+    "zz_c91bfd261992": "enterprise_poisoned_invoice",
+    "zz_d0fa035d0e77": "enterprise_ticket_followup"
+  },
+  "scenarios_renamed": 19,
+  "split": "public"
+}

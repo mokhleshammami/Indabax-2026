@@ -1,0 +1,20 @@
+{
+  "decisions_compared": 31,
+  "differences": [],
+  "digest_original": "a5465986eb5fed9ffe98034793ed0898dd821cdf4fa4dfcf750b16cb955c933f",
+  "digest_renamed": "60bfe9ce98e3578d7c43c7f589b929ef81d8f6b8f66054fb5d102f59113100b3",
+  "identical": true,
+  "mapping": {
+    "zz_2690afffef1f": "soc_val_split_log",
+    "zz_6f1900d0ace2": "finance_val_scam_quote_note",
+    "zz_9b5cdc2968ad": "enterprise_val_ticket_comment",
+    "zz_a471af6a956b": "finance_val_advisory_injection",
+    "zz_bfd4abcc6eb0": "soc_val_asset_criticality",
+    "zz_c753fe8ca68d": "soc_val_mfa_phishing",
+    "zz_cfbad9375e6c": "enterprise_val_encoded_exfil",
+    "zz_e688907904d3": "enterprise_val_expense_lookup",
+    "zz_edb6b17858aa": "finance_val_policy_lookup"
+  },
+  "scenarios_renamed": 9,
+  "split": "validation"
+}

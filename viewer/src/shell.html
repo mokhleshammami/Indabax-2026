@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AEGIS Trace Viewer</title>
+<meta name="description" content="Every AEGIS decision, explained: the action, the provenance chain behind it, the authority it was capped at, and what happened next.">
+<style>
+/*AEGIS_STYLE*/
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">AEGIS</span>
+      <span class="brand-sub">trace viewer · SENTINEL / IndabaX Tunisia 2026</span>
+    </div>
+    <p class="thesis">
+      Authority comes from the user and the policy, never from observed data.
+      <b>Taint constrains authority, not attention.</b>
+    </p>
+    <div class="topbar-actions">
+      <span class="brand-sub" id="build-stamp"></span>
+      <button class="btn" type="button" id="rail-toggle">Runs</button>
+      <button class="btn" type="button" id="summary-toggle" aria-pressed="false">Summary</button>
+      <button class="btn" type="button" id="presenter-toggle" aria-pressed="false">Presenter</button>
+      <button class="btn" type="button" id="theme-toggle">Light</button>
+    </div>
+  </header>
+
+  <div class="panes">
+    <nav class="rail" aria-label="Runs">
+      <div class="pane-head">
+        <div class="pane-title">Runs</div>
+        <input class="search" id="search" type="search" placeholder="Filter runs…" aria-label="Filter runs">
+        <div class="chiprow" id="domain-filters"></div>
+        <div class="chiprow" id="decision-filters"></div>
+        <div class="chiprow" id="reason-filter"></div>
+      </div>
+      <div id="run-list"></div>
+    </nav>
+
+    <section class="steps" aria-label="Steps in this run">
+      <div class="run-head" id="run-head"></div>
+      <div id="step-list"></div>
+    </section>
+
+    <main class="detail" aria-label="Decision detail">
+      <div class="detail-inner" id="detail-inner"></div>
+      <div id="summary" hidden></div>
+      <div class="footer-nav" id="footer-nav">
+        <button class="btn" type="button" id="prev-step">Previous</button>
+        <button class="btn" type="button" id="next-step">Next step</button>
+        <button class="btn" type="button" id="next-flag">Next flagged step</button>
+        <span class="spacer"></span>
+        <span class="brand-sub" id="step-position"></span>
+        <span class="kbd">&larr; &rarr;</span>
+        <span class="brand-sub">step</span>
+        <span class="kbd">b</span>
+        <span class="brand-sub">next flagged</span>
+        <span class="kbd">p</span>
+        <span class="brand-sub">presenter</span>
+        <span class="kbd">s</span>
+        <span class="brand-sub">summary</span>
+      </div>
+    </main>
+  </div>
+</div>
+<script>
+/*AEGIS_DATA*/
+</script>
+<script>
+/*AEGIS_SCRIPT*/
+</script>
+</body>
+</html>

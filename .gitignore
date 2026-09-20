@@ -3,10 +3,18 @@ __pycache__/
 .venv/
 venv/
 .env
-traces/
-artifacts/
-eval/results/
 *.egg-info/
 .pytest_cache/
 .ruff_cache/
 .DS_Store
+
+# The simulator's own run artifacts live in the simulator checkout, not here.
+artifacts/
+
+# Superseded trace instances kept only when AEGIS_TRACE_HISTORY=1.
+traces/.history/
+
+# Note: `traces/` and `eval/results/` ARE committed on purpose. The technical
+# report cites both — every table in report/report.md §6–§7 is generated from
+# eval/results/, and the observability layer is built from traces/. A reader
+# must be able to reproduce and check them.

@@ -1,0 +1,71 @@
+INFO:     Started server process [1458]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36162 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36172 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36172 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36172 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36172 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36186 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36186 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36198 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36198 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36198 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36198 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36208 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36208 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36208 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36208 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36208 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36212 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36212 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36222 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36222 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36222 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36226 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36226 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36238 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36238 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36238 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36246 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36246 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36246 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36246 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36246 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36246 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36254 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36254 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36254 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36254 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36254 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36254 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36266 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36266 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36266 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36282 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36288 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36288 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36288 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36288 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36288 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36292 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36292 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36300 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36300 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36300 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36314 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36314 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36314 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36314 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36328 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36328 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33604 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33604 - "POST /v1/decision HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1458]
